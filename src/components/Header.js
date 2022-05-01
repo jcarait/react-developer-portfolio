@@ -9,13 +9,22 @@ function Header({ currentPage, handlePageChange }) {
       <nav className="flex-nav">
         <div id="icon" className="column-6 column-8"></div>
         <div className="column-6 column-4">
-          <i className="toggle fa fa-bars"></i>
-
-          <ul className="nav">
+          <button
+            className="hamburger"
+            onClick={() => {
+              setIsNavExpanded(!isNavExpanded);
+            }}
+          >
+            <i className="toggle fa fa-bars"></i>
+          </button>
+          <ul className={isNavExpanded ? 'nav active' : ''}>
             <li className="nav-item">
               <a
                 href="#home"
-                onClick={() => handlePageChange('Home')}
+                onClick={() => {
+                  handlePageChange('Home');
+                  setIsNavExpanded(false);
+                }}
                 className={
                   currentPage === 'Home' ? 'nav-link active' : 'nav-link'
                 }
@@ -26,7 +35,10 @@ function Header({ currentPage, handlePageChange }) {
             <li className="nav-item">
               <a
                 href="#about"
-                onClick={() => handlePageChange('About')}
+                onClick={() => {
+                  handlePageChange('About');
+                  setIsNavExpanded(false);
+                }}
                 className={
                   currentPage === 'About' ? 'nav-link active' : 'nav-link'
                 }
@@ -37,7 +49,10 @@ function Header({ currentPage, handlePageChange }) {
             <li className="nav-item">
               <a
                 href="#projects"
-                onClick={() => handlePageChange('Projects')}
+                onClick={() => {
+                  handlePageChange('Projects');
+                  setIsNavExpanded(false);
+                }}
                 className={
                   currentPage === 'Projects' ? 'nav-link active' : 'nav-link'
                 }
@@ -48,7 +63,10 @@ function Header({ currentPage, handlePageChange }) {
             <li className="nav-item">
               <a
                 href="#contact"
-                onClick={() => handlePageChange('Contact')}
+                onClick={() => {
+                  handlePageChange('Contact');
+                  setIsNavExpanded(false);
+                }}
                 className={
                   currentPage === 'Contact' ? 'nav-link active' : 'nav-link'
                 }

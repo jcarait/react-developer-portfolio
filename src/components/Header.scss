@@ -1,21 +1,28 @@
 @import '../variables.scss';
 @import 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css';
 
+button {
+  background: none;
+  border-style: none;
+  padding: 1rem;
+}
+
 a,
 .toggle {
   color: $light;
   text-decoration: none;
-  .nav-link {
-    &:active {
+  &.nav-link {
+    &.active {
       padding: 0.5rem 1rem;
-      background-color: #fff;
+      background-color: $secondary;
+      border-radius: $border-radius;
+      transition: all 0.1s ease-out;
     }
   }
 }
 
 .flex-nav {
   margin: 0 2rem 0 2rem;
-  border-bottom: solid 1px;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: auto;
@@ -38,6 +45,8 @@ a,
   justify-content: flex-end;
   font-size: 1.125rem;
   align-items: center;
+  color: $light;
+  font-size: 2rem;
 }
 
 i {
@@ -52,10 +61,17 @@ i {
 .flex-nav {
   ul.active {
     display: flex;
-    background: #fff;
+    background: $body-bg;
     height: 80vh;
+    opacity: 0.9;
     li {
       margin: 0.5rem 0;
+
+      a {
+        color: $light;
+        font-size: 2rem;
+        line-height: 5rem;
+      }
     }
   }
   ul {
@@ -73,7 +89,8 @@ i {
 }
 
 @media (min-width: 62rem) {
-  .toggle {
+  .toggle,
+  button {
     display: none;
   }
 
