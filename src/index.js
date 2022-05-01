@@ -1,12 +1,13 @@
-import React from "react";
-import ReactDOM from "react-dom";
+import React from 'react';
+import ReactDOM from 'react-dom';
 //Styles
-import "normalize.css";
-import "./index.scss";
+import 'normalize.css';
+import './index.scss';
 //Components
-import About from "./components/pages/About";
-import Footer from "./components/Footer";
-import Projects from "./components/Projects";
+import About from './components/pages/About';
+import Footer from './components/Footer';
+import Projects from './components/Projects';
+//Pages
 
 export const App = () => {
   return (
@@ -28,11 +29,11 @@ export const App = () => {
           <li></li>
         </ul>
       </div>
-      <About />
-      <Projects />
-      
     </div>
   );
 };
 
-ReactDOM.render([<App></App>, <Footer />], document.getElementById("root"));
+ReactDOM.render(
+  [<App></App>, <Footer></Footer>],
+  document.getElementById('root')
+);
