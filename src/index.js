@@ -1,7 +1,16 @@
-import ReactDOM from 'react-dom/client';
-import App from './App';
+import React from 'react';
+import ReactDOM from 'react-dom';
+//Components
+import About from './components/About'
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-    <App />
-);
+export const App = () => {
+    return (
+        <div>
+            <h1>Dev Portfolio</h1>
+            <About />
+            </div>
+      
+    )
+}
+
+ReactDOM.render(<App></App>, document.getElementById('root'))
