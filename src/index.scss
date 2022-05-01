@@ -23,6 +23,11 @@ a {
     transition: color 0.25s ease-in-out
 }
 
+section {
+    height: 100vh;
+    background-color: $body-bg;
+}
+
 
 .title-container {
     width: 100%;
