@@ -1,2 +1,20 @@
 @import '../../variables.scss';
 
+.about {
+  padding: 0 1rem;
+  margin-left: 20px;
+  display: flex;
+  align-items: center;
+
+  &__text {
+    max-width: 45%;
+  }
+  &__img {
+    max-width: 45%;
+    padding-left: 3rem;
+  }
+}
+
+h2 {
+  margin-bottom: 20px;
+}

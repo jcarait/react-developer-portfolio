@@ -40,7 +40,7 @@ const App = () => {
     <div>
       <main>
         <Header currentPage={currentPage} handlePageChange={handlePageChange} />
-        {renderPage()}
+        <div className="content container--fluid">{renderPage()}</div>
       </main>
       <div className="area">
         <ul className="circles">
