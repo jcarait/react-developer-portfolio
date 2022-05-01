@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
-import ReactDOM from 'react-dom';
+import ReactDOM from 'react-dom/client';
 //Styles
 import 'normalize.css';
 import './index.scss';
+import './grid.scss';
 //Components
-import Footer from './components/Footer';
 import Header from './components/Header';
 //Pages
 import About from './components/pages/About';
@@ -30,17 +30,19 @@ const App = () => {
       case 'Projects':
         return <Projects />;
       default:
-        <TitleContainer />;
+        console.log('default');
     }
   };
 
   const handlePageChange = (page) => setCurrentPage(page);
 
   return (
-    <main>
-      <div className="area">
+    <div>
+      <main>
         <Header currentPage={currentPage} handlePageChange={handlePageChange} />
         {renderPage()}
+      </main>
+      <div className="area">
         <ul className="circles">
           <li></li>
           <li></li>
@@ -54,8 +56,10 @@ const App = () => {
           <li></li>
         </ul>
       </div>
-    </main>
+    </div>
   );
 };
 
-ReactDOM.render(<App key="1" />, document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById('root'));
+
+root.render(<App />);

@@ -1,10 +1,12 @@
-import './about.scss'
+import React from 'react';
+import './about.scss';
 
-export default function About() {
-    return (
-        <section className="about">
-            <h2>About</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque
+const About = () => {
+  return (
+    <section className="About">
+      <h2>About</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque
         velit, lobortis ut magna varius, blandit rhoncus sem. Morbi lacinia nisi
         ac dui fermentum, sed luctus urna tincidunt. Etiam ut feugiat ex. Cras
         non risus mi. Curabitur mattis rutrum ipsum, ut aliquet urna imperdiet
@@ -13,7 +15,10 @@ export default function About() {
         tristique ex. Donec nec ornare elit. Donec blandit est sed risus feugiat
         porttitor. Vestibulum molestie hendrerit massa non consequat. Vestibulum
         vitae lorem tortor. In elementum ultricies tempus. Interdum et malesuada
-        fames ac ante ipsum primis in faucibus.</p>
-        </section>
-    )
-}
+        fames ac ante ipsum primis in faucibus.
+      </p>
+    </section>
+  );
+};
+
+export default About;
