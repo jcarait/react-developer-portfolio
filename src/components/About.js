@@ -1,8 +1,8 @@
-
+import './about.scss'
 
 export default function About() {
     return (
-        <div>
+        <section className="about">
             <h2>About</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque
         velit, lobortis ut magna varius, blandit rhoncus sem. Morbi lacinia nisi
@@ -14,6 +14,6 @@ export default function About() {
         porttitor. Vestibulum molestie hendrerit massa non consequat. Vestibulum
         vitae lorem tortor. In elementum ultricies tempus. Interdum et malesuada
         fames ac ante ipsum primis in faucibus.</p>
-        </div>
+        </section>
     )
 }
