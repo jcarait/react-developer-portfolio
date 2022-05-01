@@ -23,19 +23,20 @@ a {
   transition: color 0.25s ease-in-out;
 }
 
-section {
-  height: 100vh;
-  background-color: $body-bg;
+p {
+  color: $light;
 }
 
-.title-container {
+.title-container,
+section {
   width: 100%;
   position: absolute;
   top: 50vh;
 
-  h1 {
+  h1,
+  p {
     text-align: center;
-    color: #fff;
+    color: $light;
     font-size: 50px;
   }
 }
