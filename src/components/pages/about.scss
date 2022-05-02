@@ -1,20 +1,61 @@
 @import '../../variables.scss';
 
+h2 {
+  margin-bottom: 20px;
+}
+
+.about {
+  &__img {
+    max-width: 100%;
+    img {
+      width: 100%;
+    }
+  }
+}
+
 .about {
   padding: 0 1rem;
   margin-left: 20px;
-  display: flex;
-  align-items: center;
+  height: 100vh;
 
   &__text {
-    max-width: 45%;
+    max-width: 40%;
   }
   &__img {
-    max-width: 45%;
+    max-width: 40%;
     padding-left: 3rem;
   }
 }
 
-h2 {
-  margin-bottom: 20px;
+.container__row {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@media (min-width: 768px) {
+  .about {
+    padding: 0 1rem;
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+
+    &__text {
+      max-width: 40%;
+    }
+    &__img {
+      max-width: 40%;
+      padding-left: 3rem;
+    }
+  }
+
+  .container__row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  h2 {
+    margin-bottom: 20px;
+  }
 }
