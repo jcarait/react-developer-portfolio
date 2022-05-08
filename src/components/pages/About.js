@@ -6,8 +6,8 @@ import aboutImage from '../../images/about/about.jpg';
 const About = () => {
   return (
     <section className="about container--fluid">
-      <div class="container__row">
-        <div class="about__text container__col-6">
+      <div className="container__row">
+        <div className="about__text container__col-md-12">
           <h2>About</h2>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque
@@ -23,7 +23,7 @@ const About = () => {
             ipsum primis in faucibus.
           </p>
         </div>
-        <div class="about__img container__col-6">
+        <div className="about__img container__col-md-12 col-lg-6">
           <img src={aboutImage} alt="a man holding sun in hands"></img>
         </div>
       </div>

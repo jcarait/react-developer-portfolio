@@ -4,12 +4,14 @@ h2 {
   margin-bottom: 20px;
 }
 
+img {
+  max-width: 2%;
+}
+
 .about {
-  &__img {
-    max-width: 100%;
-    img {
-      width: 100%;
-    }
+  &__text {
+    display: block;
+    align-items: center;
   }
 }
 
@@ -50,9 +52,7 @@ h2 {
   }
 
   .container__row {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: row;
   }
 
   h2 {
