@@ -5,6 +5,7 @@ import 'normalize.css';
 import './index.scss';
 //Components
 import Header from './components/Header';
+import Navigation from './components/Navigation';
 //Pages
 import About from './components/pages/About';
 import Projects from './components/pages/Projects';
@@ -29,7 +30,7 @@ const App = () => {
       case 'Projects':
         return <Projects />;
       default:
-        console.log('default');
+        return;
     }
   };
 
@@ -38,10 +39,14 @@ const App = () => {
   return (
     <div>
       <main>
-        <Header currentPage={currentPage} handlePageChange={handlePageChange} />
+        <Header></Header>
+        <Navigation
+          currentPage={currentPage}
+          handlePageChange={handlePageChange}
+        />
         <div className="content container--fluid">{renderPage()}</div>
       </main>
-      <div className="area">
+      {/* <div className="area">
         <ul className="circles">
           <li></li>
           <li></li>
@@ -54,7 +59,7 @@ const App = () => {
           <li></li>
           <li></li>
         </ul>
-      </div>
+      </div> */}
     </div>
   );
 };
