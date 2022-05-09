@@ -2,30 +2,30 @@
 
 h2 {
   margin-bottom: 20px;
+  color: $light;
 }
 
 img {
-  max-width: 2%;
+  max-width: 100%;
 }
 
 .about {
   &__text {
     display: block;
-    align-items: center;
   }
 }
 
 .about {
   padding: 0 1rem;
-  margin-left: 20px;
+  margin-left: 1em;
   height: 100vh;
 
   &__text {
-    max-width: 40%;
+    max-width: 100%;
+    margin-bottom: 1.8em;
   }
   &__img {
-    max-width: 40%;
-    padding-left: 3rem;
+    max-width: 100%;
   }
 }
 
@@ -41,6 +41,7 @@ img {
     margin-left: 20px;
     display: flex;
     align-items: center;
+    justify-content: center;
 
     &__text {
       max-width: 40%;

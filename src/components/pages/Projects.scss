@@ -1,0 +1,17 @@
+@import '../../variables.scss';
+
+.project-area {
+  padding: 4rem 0;
+
+  .button-group {
+    button {
+      background: transparent;
+      border: none;
+      text-transform: uppercase;
+
+      + button {
+        padding-left: 3rem;
+      }
+    }
+  }
+}

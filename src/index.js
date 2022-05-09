@@ -3,7 +3,6 @@ import ReactDOM from 'react-dom/client';
 //Styles
 import 'normalize.css';
 import './index.scss';
-import './grid.scss';
 //Components
 import Header from './components/Header';
 //Pages

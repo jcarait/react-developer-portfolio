@@ -1,21 +1,88 @@
 import React from 'react';
+import './Projects.scss';
+import projectOne from '../../images/projects/portfolio-1.PNG';
+import projectTwo from '../../images/projects/portfolio-2.PNG';
+import projectThree from '../../images/projects/portfolio-3.PNG';
 
-export default function Projects() {
+const Projects = () => {
   return (
-    <section className="Projects">
-      <h2>Projects</h2>
-      <p>
-        Lorem ipsum dolor sit amets, consectetur adipiscing elit. Sed neque
-        velit, lobortis ut magna varius, blandit rhoncus sem. Morbi lacinia nisi
-        ac dui fermentum, sed luctus urna tincidunt. Etiam ut feugiat ex. Cras
-        non risus mi. Curabitur mattis rutrum ipsum, ut aliquet urna imperdiet
-        ac. Sed nec nulla aliquam, bibendum odio eget, vestibulum tortor. Cras
-        rutrum ligula in tincidunt commodo. Morbi sit amet mollis orci, in
-        tristique ex. Donec nec ornare elit. Donec blandit est sed risus feugiat
-        porttitor. Vestibulum molestie hendrerit massa non consequat. Vestibulum
-        vitae lorem tortor. In elementum ultricies tempus. Interdum et malesuada
-        fames ac ante ipsum primis in faucibus.
-      </p>
+    <section class="project-area" id="projects">
+      <div class="container">
+        <div class="project-title pb-5">
+          <h1 class="text-uppercase title-h1">My</h1>
+          <h1 class="text-uppercase title-h1">Projects</h1>
+        </div>
+        <div class="button-group">
+          <button type="button" class="active" id="btn1">
+            All
+          </button>
+          <button type="button" data-filter=".latest">
+            Latest
+          </button>
+          <button type="button" data-filter=".upcoming">
+            Upcoming
+          </button>
+        </div>
+
+        <div class="row grid">
+          <div class="col-lg-4 col-md-6 col-sm-12 element-item">
+            <div class="my-project">
+              <div class="img">
+                <a href="https://jcarait.github.io/recipe-relish-app/">
+                  <img src={projectOne} alt="project-1"></img>
+                </a>
+              </div>
+              <div class="title py-4">
+                <h4 class="text-uppercase">Recipe App</h4>
+                <span class="text-secondary">Portfolio</span>
+                <span class="link-github-repo">
+                  <a href="https://github.com/jcarait/recipe-app">
+                    Github Repo
+                  </a>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12 element-item">
+            <div class="my-project">
+              <div class="img">
+                <a href="https://jcarait.github.io/weather-dashboard/">
+                  <img src={projectTwo} alt="project-1"></img>
+                </a>
+              </div>
+              <div class="title py-4">
+                <h4 class="text-uppercase">Weather Dashboard</h4>
+                <span class="text-secondary">Portfolio</span>
+                <span class="link-github-repo">
+                  <a href="https://github.com/jcarait/weather-dashboard">
+                    Github Repo
+                  </a>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12 element-item">
+            <div class="my-project">
+              <div class="img">
+                <a href="https://jcarait.github.io/work-day-scheduler/">
+                  <img src={projectThree} alt="project-1"></img>
+                </a>
+              </div>
+              <div class="title py-4">
+                <h4 class="text-uppercase">Work Day Scheduler</h4>
+                <span class="text-secondary">Portfolio</span>
+                <span class="link-github-repo">
+                  <a href="https://github.com/jcarait/work-day-scheduler">
+                    Github Repo
+                  </a>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
   );
-}
+};
+
+export default Projects;
