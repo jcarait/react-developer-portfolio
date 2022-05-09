@@ -12,20 +12,8 @@ const Projects = () => {
           <h1 class="text-uppercase title-h1">My</h1>
           <h1 class="text-uppercase title-h1">Projects</h1>
         </div>
-        <div class="button-group">
-          <button type="button" class="active" id="btn1">
-            All
-          </button>
-          <button type="button" data-filter=".latest">
-            Latest
-          </button>
-          <button type="button" data-filter=".upcoming">
-            Upcoming
-          </button>
-        </div>
-
         <div class="row grid">
-          <div class="col-lg-4 col-md-6 col-sm-12 element-item">
+          <div class="col">
             <div class="my-project">
               <div class="img">
                 <a href="https://jcarait.github.io/recipe-relish-app/">
@@ -43,7 +31,7 @@ const Projects = () => {
               </div>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6 col-sm-12 element-item">
+          <div class="col">
             <div class="my-project">
               <div class="img">
                 <a href="https://jcarait.github.io/weather-dashboard/">
@@ -61,7 +49,7 @@ const Projects = () => {
               </div>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6 col-sm-12 element-item">
+          <div class="col">
             <div class="my-project">
               <div class="img">
                 <a href="https://jcarait.github.io/work-day-scheduler/">

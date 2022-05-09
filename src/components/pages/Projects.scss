@@ -3,14 +3,30 @@
 .project-area {
   padding: 4rem 0;
 
-  .button-group {
-    button {
-      background: transparent;
-      border: none;
-      text-transform: uppercase;
+  .project-title {
+    margin-bottom: 1em;
+  }
 
-      + button {
-        padding-left: 3rem;
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+
+    .col {
+      position: relative;
+      width: 100%;
+      padding-right: 1em;
+      padding-left: 1em;
+      margin-bottom: 1em;
+
+      .my-project {
+        .img {
+          a {
+            img {
+              max-width: 300px;
+              transition: transform 0.4s ease;
+            }
+          }
+        }
       }
     }
   }
