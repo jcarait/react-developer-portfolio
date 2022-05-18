@@ -1,0 +1,39 @@
+@import '../variables.scss';
+@import 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css';
+
+.nav {
+  margin: 0 auto;
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: space-around;
+
+  @media (min-width: 768px) {
+    justify-content: space-between;
+    width: 650px;
+  }
+
+  &-btn {
+    background: transparent;
+    border-style: none;
+    padding: 1rem;
+    font-size: 1.15rem;
+    font-weight: 600;
+  }
+  &-link {
+    width: 180px;
+
+    &.active {
+      padding: 0.75rem 1.65rem;
+      background-color: $orange;
+      border-radius: $border-radius;
+      transition: all 0.2s ease-out;
+    }
+  }
+}
+
+a,
+.toggle {
+  text-decoration: none;
+  &.nav-link {
+  }
+}

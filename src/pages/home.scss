@@ -1,0 +1,21 @@
+@import '../variables.scss';
+
+.container {
+  display: block;
+  &.title {
+    margin-top: 5rem;
+    max-width: 300px;
+    max-height: 300px;
+  }
+  &.avatar {
+    .image {
+      object-fit: contain;
+      object-position: center;
+      background-color: $platinum;
+      vertical-align: middle;
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+    }
+  }
+}

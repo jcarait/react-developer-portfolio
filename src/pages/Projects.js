@@ -1,8 +1,8 @@
 import React from 'react';
 import './Projects.scss';
-import projectOne from '../../images/projects/portfolio-1.PNG';
-import projectTwo from '../../images/projects/portfolio-2.PNG';
-import projectThree from '../../images/projects/portfolio-3.PNG';
+import projectOne from '../images/projects/portfolio-1.PNG';
+import projectTwo from '../images/projects/portfolio-2.PNG';
+import projectThree from '../images/projects/portfolio-3.PNG';
 
 const Projects = () => {
   return (

@@ -1,68 +1,7 @@
-import React, { useState } from 'react';
+import React from 'react';
 import ReactDOM from 'react-dom/client';
-//Styles
-import 'normalize.css';
-import './index.scss';
-//Components
-import Header from './components/Header';
-import Navigation from './components/Navigation';
-//Pages
-import About from './components/pages/About';
-import Projects from './components/pages/Projects';
 
-const TitleContainer = () => {
-  return (
-    <div className="title-container">
-      <h1 className="title">Dev Portfolio</h1>
-    </div>
-  );
-};
-
-const App = () => {
-  const [currentPage, setCurrentPage] = useState('Home');
-
-  const renderPage = () => {
-    switch (currentPage) {
-      case 'Home':
-        return <TitleContainer />;
-      case 'About':
-        return <About />;
-      case 'Projects':
-        return <Projects />;
-      default:
-        return;
-    }
-  };
-
-  const handlePageChange = (page) => setCurrentPage(page);
-
-  return (
-    <div>
-      <main>
-        <Header></Header>
-        <Navigation
-          currentPage={currentPage}
-          handlePageChange={handlePageChange}
-        />
-        <div className="content container--fluid">{renderPage()}</div>
-      </main>
-      {/* <div className="area">
-        <ul className="circles">
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-        </ul>
-      </div> */}
-    </div>
-  );
-};
+import App from './App';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
