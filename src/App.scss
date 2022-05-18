@@ -8,9 +8,9 @@
 
 a {
   transition: color 0.25s ease-in-out;
-  color: $oxford;
+  color: $light;
   &:visited {
-    color: $oxford;
+    color: $light;
   }
 }
 
@@ -19,8 +19,8 @@ body,
 #root {
   width: 100%;
   height: 100%;
-  background-color: $platinum;
-  color: $oxford;
+  background-color: $oxford;
+  color: $platinum;
   text-transform: uppercase;
   text-align: center;
   font-family: 'Poppins', sans-serif;
