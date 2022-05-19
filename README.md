@@ -2,21 +2,17 @@
 
 ## Description
 
-I had a lot of fun building this portfolio which has been recently updated as of 3rd February 2021. I'm currently undergoing training @ University of Sydney for a certificate Full Stack Development which includes the following languages and libraries:
+It's been a journey and near the completion for certificate Full Stack Development with University of Sydney. This is an update to my portfolio.
 
-- MERN Stack
-  - MongoDB
-  - Express JS
-  - React JS
-  - Node JS
-- Jquery
-- CSS3
-- Bootstrap 5
-- HTML5
+## Deployed Link
+
+[Github Deployed Portfolio](https://jcarait.github.io/react-developer-portfolio/)
 
 ## Installation
 
-[Github Deployed Portfolio](https://jcarait.github.io/dev-portfolio/)
+`npm install`
+
+## Screenshots
 
 ### Features
 
