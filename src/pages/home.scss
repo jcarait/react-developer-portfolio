@@ -7,6 +7,12 @@
     max-width: 300px;
     max-height: 300px;
     padding-bottom: 3rem;
+
+    @media (min-width: 768px) {
+      max-width: 100%;
+      margin-top: 20rem;
+      font-size: 2rem;
+    }
   }
   &.avatar {
     .image {
@@ -17,6 +23,12 @@
       width: 150px;
       height: 150px;
       border-radius: 50%;
+
+      @media (min-width: 768px) {
+        width: 300px;
+        height: 300px;
+        margin-top: 18rem;
+      }
     }
   }
 }

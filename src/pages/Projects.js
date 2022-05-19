@@ -1,73 +1,65 @@
 import React from 'react';
+import Card from '../components/card';
 import './Projects.scss';
+
+//import images
 import projectOne from '../images/projects/portfolio-1.PNG';
 import projectTwo from '../images/projects/portfolio-2.PNG';
-import projectThree from '../images/projects/portfolio-3.PNG';
+import projectFour from '../images/projects/project-4.PNG';
+import projectSix from '../images/projects/project-6.PNG';
 
 const Projects = () => {
+  const demoLinks = {
+    two: 'https://jcarait.github.io/weather-dashboard/',
+    one: 'https://carolinatnp.github.io/recipe-app/',
+    six: 'https://tech-blog-by-jono.herokuapp.com/',
+    four: 'https://act-of-random-kindness.herokuapp.com/',
+  };
+
+  const gitLinks = {
+    two: 'https://github.com/jcarait/weather-dashboard',
+    one: 'https://github.com/jcarait/recipe-relish-app',
+    six: 'https://github.com/jcarait/tech-blog',
+    four: 'https://github.com/jcarait/act-of-random-kindness',
+  };
+
   return (
-    <section class="project-area" id="projects">
-      <div class="container">
-        <div class="project-title pb-5">
-          <h1 class="text-uppercase title-h1">My</h1>
-          <h1 class="text-uppercase title-h1">Projects</h1>
-        </div>
-        <div class="row grid">
-          <div class="col">
-            <div class="my-project">
-              <div class="img">
-                <a href="https://jcarait.github.io/recipe-relish-app/">
-                  <img src={projectOne} alt="project-1"></img>
-                </a>
-              </div>
-              <div class="title py-4">
-                <h4 class="text-uppercase">Recipe App</h4>
-                <span class="text-secondary">Portfolio</span>
-                <span class="link-github-repo">
-                  <a href="https://github.com/jcarait/recipe-app">
-                    Github Repo
-                  </a>
-                </span>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="my-project">
-              <div class="img">
-                <a href="https://jcarait.github.io/weather-dashboard/">
-                  <img src={projectTwo} alt="project-1"></img>
-                </a>
-              </div>
-              <div class="title py-4">
-                <h4 class="text-uppercase">Weather Dashboard</h4>
-                <span class="text-secondary">Portfolio</span>
-                <span class="link-github-repo">
-                  <a href="https://github.com/jcarait/weather-dashboard">
-                    Github Repo
-                  </a>
-                </span>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="my-project">
-              <div class="img">
-                <a href="https://jcarait.github.io/work-day-scheduler/">
-                  <img src={projectThree} alt="project-1"></img>
-                </a>
-              </div>
-              <div class="title py-4">
-                <h4 class="text-uppercase">Work Day Scheduler</h4>
-                <span class="text-secondary">Portfolio</span>
-                <span class="link-github-repo">
-                  <a href="https://github.com/jcarait/work-day-scheduler">
-                    Github Repo
-                  </a>
-                </span>
-              </div>
-            </div>
-          </div>
-        </div>
+    <section className="project-area" id="projects">
+      <div className="gap"></div>
+      <div className="card-grid">
+        <Card
+          name="ARK"
+          description="A charity task app for individuals to lend a helping hand to those in need"
+          image={projectFour}
+          demo={demoLinks.four}
+          imageLink={demoLinks.four}
+          github={gitLinks.four}
+        />
+        <Card
+          name="Tech Blog"
+          description="A blog board where users an share tech tips"
+          image={projectSix}
+          demo={demoLinks.six}
+          imageLink={demoLinks.six}
+          github={gitLinks.six}
+        />
+        <Card
+          name="Recipe Relish"
+          description="A recipe finder app"
+          image={projectOne}
+          demo={demoLinks.one}
+          imageLink={demoLinks.one}
+          github={gitLinks.one}
+        />
+
+        <Card
+          name="Weather Dashboard"
+          description="A weather dashboard made with Vanilla JS"
+          image={projectTwo}
+          demo={demoLinks.two}
+          imageLink={demoLinks.two}
+          github={gitLinks.two}
+        />
       </div>
     </section>
   );

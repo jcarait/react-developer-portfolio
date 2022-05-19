@@ -12,8 +12,6 @@ export default function Nav() {
   //Javascript split method to get the name of the path in array
   const splitLocation = pathname.split('/');
 
-  console.log(splitLocation);
-
   return (
     <nav className="nav">
       <button className="nav-btn">

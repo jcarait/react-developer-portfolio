@@ -1,6 +1,10 @@
 @import '../variables.scss';
 
 .about {
+  @media (min-width: 768px) {
+    margin: 0 auto;
+    width: 80%;
+  }
   &-text {
     margin-top: 3rem;
     h2 {
@@ -20,6 +24,10 @@
       vertical-align: middle;
       width: 100%;
       height: 50%;
+
+      @media (min-width: 768px) {
+        width: 50%;
+      }
     }
   }
 }
