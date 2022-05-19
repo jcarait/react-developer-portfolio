@@ -3,10 +3,10 @@ import Card from '../components/card';
 import './Projects.scss';
 
 //import images
-import projectOne from '../images/projects/portfolio-1.PNG';
-import projectTwo from '../images/projects/portfolio-2.PNG';
-import projectFour from '../images/projects/project-4.PNG';
-import projectSix from '../images/projects/project-6.PNG';
+import projectOne from '../assets/projects/portfolio-1.PNG';
+import projectTwo from '../assets/projects/portfolio-2.PNG';
+import projectFour from '../assets/projects/project-4.PNG';
+import projectSix from '../assets/projects/project-6.PNG';
 
 const Projects = () => {
   const demoLinks = {

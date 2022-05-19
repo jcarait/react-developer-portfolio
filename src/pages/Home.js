@@ -1,7 +1,7 @@
 import React from 'react';
 
 import './home.scss';
-import avatar from '../images/banner/banner-image.jpeg';
+import avatar from '../assets/banner-image.jpeg';
 
 const Home = () => {
   return (
