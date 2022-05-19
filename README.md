@@ -14,6 +14,10 @@ It's been a journey and near the completion for certificate Full Stack Developme
 
 ## Screenshots
 
+![home page](./home.JPG)
+
+![project page](./projects-page.JPG)
+
 ### Features
 
 - ReactJS
