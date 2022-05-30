@@ -2,7 +2,7 @@
 
 ## Description
 
-It's been a journey and near the completion for certificate Full Stack Development with University of Sydney. This is an update to my portfolio to show case my projects.
+It's been a journey and near the completion for certificate in Full Stack Development with University of Sydney. This is an update to my portfolio to show case my projects.
 
 ## Deployed Link
 
