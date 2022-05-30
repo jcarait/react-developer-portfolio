@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './Nav.scss';
 import { NavLink, useLocation } from 'react-router-dom';
 
@@ -16,7 +16,7 @@ export default function Nav() {
     <nav className="nav">
       <button className="nav-btn">
         <NavLink
-          to="/"
+          to="/react-developer-portfolio"
           className={splitLocation[1] === '' ? 'nav-link active' : 'nav-link'}
         >
           Home

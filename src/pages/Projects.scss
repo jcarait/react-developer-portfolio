@@ -4,9 +4,13 @@
   margin: 2em;
   display: grid;
   gap: 20px;
-  grid-template-columns: repeat(auto-fill, minmax(375px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   margin: 0 auto;
   grid-template-rows: max-content;
+
+  @media (min-width: 768px) {
+    grid-template-columns: repeat(auto-fill, minmax(375px, 1fr));
+  }
 }
 
 .project-area {

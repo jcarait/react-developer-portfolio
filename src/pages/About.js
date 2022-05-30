@@ -6,18 +6,16 @@ const About = () => {
   return (
     <section className="about">
       <div className="about-text">
-        <h2>About</h2>
+        <h2>About me</h2>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque
-          velit, lobortis ut magna varius, blandit rhoncus sem. Morbi lacinia
-          nisi ac dui fermentum, sed luctus urna tincidunt. Etiam ut feugiat ex.
-          Cras non risus mi. Curabitur mattis rutrum ipsum, ut aliquet urna
-          imperdiet ac. Sed nec nulla aliquam, bibendum odio eget, vestibulum
-          tortor. Cras rutrum ligula in tincidunt commodo. Morbi sit amet mollis
-          orci, in tristique ex. Donec nec ornare elit. Donec blandit est sed
-          risus feugiat porttitor. Vestibulum molestie hendrerit massa non
-          consequat. Vestibulum vitae lorem tortor. In elementum ultricies
-          tempus. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+          Front-end web developer with a certificate in full stack development
+          from University of Sydney, with skills in MERN stack. With over 10
+          years in customer service and 8 years in the security industry,
+          excited leverage these experiences in web development.
+        </p>
+        <p>
+          My hobbies are programming, music, food and a bit of gaming in spare
+          time.
         </p>
       </div>
       <div className="about-img">

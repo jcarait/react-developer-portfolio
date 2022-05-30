@@ -44,6 +44,7 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 
   @media (min-width: 768px) {
     flex-direction: row;
@@ -56,17 +57,32 @@ footer {
 }
 
 .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 1rem;
   margin-right: auto;
   margin-left: auto;
   padding-right: 15px;
+  max-height: 50rem;
 
   /* for edge cases: */
   width: 100%;
   max-width: 100%;
 
+  &.-header {
+    padding-left: 0;
+    margin-left: 0;
+
+    @media (min-width: 768px) {
+      margin: 0 auto;
+    }
+  }
+
   @media (min-width: 768px) {
     width: 750px;
-    padding-left: 15px;
+    padding-left: 5rem;
   }
 
   @media (min-width: 992px) {
@@ -74,6 +90,6 @@ footer {
   }
 
   @media (min-width: 1200px) {
-    width: 1170px;
+    width: 900px;
   }
 }
