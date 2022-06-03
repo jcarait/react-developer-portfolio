@@ -6,7 +6,7 @@ It's been a journey and near the completion for certificate in Full Stack Develo
 
 ## Deployed Link
 
-[Github Deployed Portfolio](https://jcarait.github.io/react-developer-portfolio/)
+[Github Deployed Portfolio](https://jcarait.dev/)
 
 ## Installation
 
