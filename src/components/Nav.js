@@ -16,7 +16,7 @@ export default function Nav() {
     <nav className="nav">
       <button className="nav-btn">
         <NavLink
-          to="/react-developer-portfolio"
+          to="/"
           className={splitLocation[1] === '' ? 'nav-link active' : 'nav-link'}
         >
           Home
