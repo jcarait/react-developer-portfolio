@@ -7,6 +7,14 @@
 			"problemMatcher": [],
 			"label": "npm: start",
 			"detail": "react-scripts start"
+		},
+		{
+			"type": "npm",
+			"script": "build",
+			"group": "build",
+			"problemMatcher": [],
+			"label": "npm: build",
+			"detail": "react-scripts build"
 		}
 	]
 }
