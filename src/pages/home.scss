@@ -12,6 +12,33 @@
       font-size: 2rem;
     }
   }
+
+  .greeting {
+    font-size: 1.5rem;
+    text-transform: lowercase;
+
+    @media (min-width: 768px) {
+      font-size: 1.7rem;
+    }
+  }
+
+  .title-text {
+    font-size: 1.7rem;
+    text-transform: none;
+
+    @media (min-width: 768px) {
+      font-size: 1.9rem;
+    }
+  }
+
+  .subtitle {
+    font-size: 0.85rem;
+
+    @media (min-width: 768px) {
+      font-size: 1.05rem;
+    }
+  }
+
   &.avatar {
     .image {
       object-fit: contain;
@@ -20,11 +47,10 @@
       vertical-align: middle;
       width: 150px;
       height: 150px;
-      border-radius: 50%;
 
       @media (min-width: 768px) {
-        width: 300px;
-        height: 300px;
+        width: 225px;
+        height: 225px;
       }
     }
   }

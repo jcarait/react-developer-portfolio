@@ -13,10 +13,7 @@ const About = () => {
           years in customer service and 8 years in the security industry,
           excited leverage these experiences in web development.
         </p>
-        <p>
-          My hobbies are programming, music, food and a bit of gaming in spare
-          time.
-        </p>
+        <p>My hobbies are programming, music and seeking out great food.</p>
       </div>
       <div className="about-img">
         <img src={aboutImage} alt="a man holding sun in hands"></img>

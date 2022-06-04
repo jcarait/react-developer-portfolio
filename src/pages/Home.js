@@ -7,13 +7,13 @@ const Home = () => {
   return (
     <>
       <div className="container title">
-        <h2 className="greeting">Hey there</h2>
+        <h2 className="greeting">Hello</h2>
         <h1 className="title-text">I'm Jonathan</h1>
         <span className="subtitle">Full Stack Developer</span>
       </div>
-      <div className="container avatar">
+      {/* <div className="container avatar">
         <img className="image" src={avatar} alt="male cartoon avatar"></img>
-      </div>
+      </div> */}
     </>
   );
 };
