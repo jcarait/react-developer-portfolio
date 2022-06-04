@@ -3,23 +3,21 @@ import Card from '../components/card';
 import './Projects.scss';
 
 //import images
-import projectOne from '../assets/projects/portfolio-1.PNG';
-import projectTwo from '../assets/projects/portfolio-2.PNG';
+import projectOne from '../assets/projects/portfolio-4.JPG';
+import projectTwo from '../assets/projects/portfolio-1.PNG';
 import projectFour from '../assets/projects/project-4.PNG';
 import projectSix from '../assets/projects/project-6.PNG';
 
 const Projects = () => {
   const demoLinks = {
-    two: 'https://jcarait.github.io/weather-dashboard/',
+    two: 'https://prime-toys.herokuapp.com/',
     one: 'https://carolinatnp.github.io/recipe-app/',
-    six: 'https://tech-blog-by-jono.herokuapp.com/',
     four: 'https://act-of-random-kindness.herokuapp.com/',
   };
 
   const gitLinks = {
-    two: 'https://github.com/jcarait/weather-dashboard',
+    two: 'https://github.com/jcarait/prime-toys',
     one: 'https://github.com/jcarait/recipe-relish-app',
-    six: 'https://github.com/jcarait/tech-blog',
     four: 'https://github.com/jcarait/act-of-random-kindness',
   };
 
@@ -36,26 +34,18 @@ const Projects = () => {
           github={gitLinks.four}
         />
         <Card
-          name="Tech Blog"
-          description="A blog board where users an share tech tips"
-          image={projectSix}
-          demo={demoLinks.six}
-          imageLink={demoLinks.six}
-          github={gitLinks.six}
-        />
-        <Card
           name="Recipe Relish"
           description="A recipe finder app"
-          image={projectOne}
+          image={projectTwo}
           demo={demoLinks.one}
           imageLink={demoLinks.one}
           github={gitLinks.one}
         />
 
         <Card
-          name="Weather Dashboard"
-          description="A weather dashboard made with Vanilla JS"
-          image={projectTwo}
+          name="Prime Toys"
+          description="A toy trading and charity trading"
+          image={projectOne}
           demo={demoLinks.two}
           imageLink={demoLinks.two}
           github={gitLinks.two}
