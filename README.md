@@ -22,7 +22,6 @@ It's been a journey and near the completion for certificate in Full Stack Develo
 
 - ReactJS
 - SASS
-- Mobile-First CSS Design
 
 ## Credits
 
