@@ -11,6 +11,10 @@
   @media (min-width: 768px) {
     grid-template-columns: repeat(auto-fill, minmax(375px, 1fr));
   }
+
+  @media (min-width: 1200px) {
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+  }
 }
 
 .project-area {
