@@ -14,9 +14,9 @@ It's been a journey and near the completion for certificate in Full Stack Develo
 
 ## Screenshots
 
-![home page](./home.JPG)
+![home page](./01-home.JPG)
 
-![project page](./projects-page.JPG)
+![project page](./01-projects-page.JPG)
 
 ### Features
 
