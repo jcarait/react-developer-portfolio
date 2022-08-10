@@ -10,7 +10,7 @@ const Home = () => {
         {/* <h2 className="greeting">Hello</h2>
         <h1 className="title-text">I'm Jonathan</h1>
         <span className="subtitle">Full Stack Developer</span> */}
-        <Typewriter words={['Hello']} loop={1} typeSpeed={70} />
+        <Typewriter words={['Hey there']} loop={1} typeSpeed={70} />
         <Typewriter words={["I'm Jonathan"]} loop={1} typeSpeed={80} />
         <Typewriter words={['Full Stack Developer']} loop={1} typeSpeed={90} />
       </div>
