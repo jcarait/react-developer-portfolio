@@ -26,6 +26,14 @@ const Projects = () => {
       <div className="gap"></div>
       <div className="card-grid">
         <Card
+          name="Prime Toys"
+          description="A toy trading and charity trading"
+          image={projectOne}
+          demo={demoLinks.two}
+          imageLink={demoLinks.two}
+          github={gitLinks.two}
+        />
+        <Card
           name="ARK"
           description="A charity task app for individuals to lend a helping hand to those in need"
           image={projectFour}
@@ -40,15 +48,6 @@ const Projects = () => {
           demo={demoLinks.one}
           imageLink={demoLinks.one}
           github={gitLinks.one}
-        />
-
-        <Card
-          name="Prime Toys"
-          description="A toy trading and charity trading"
-          image={projectOne}
-          demo={demoLinks.two}
-          imageLink={demoLinks.two}
-          github={gitLinks.two}
         />
       </div>
     </section>
