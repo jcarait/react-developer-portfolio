@@ -6,10 +6,6 @@ It's been a journey and near the completion for certificate in Full Stack Develo
 
 Upate (Aug 2024): This was my portfolio back in 2022. I'm leaving this on public as a reminder of humble beginnings and where I started.
 
-## Deployed Link
-
-[Portfolio](https://jcarait.dev/)
-
 ## Installation
 
 `npm install`
