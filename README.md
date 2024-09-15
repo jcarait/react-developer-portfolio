@@ -4,7 +4,7 @@
 
 It's been a journey and near the completion for certificate in Full Stack Development with University of Sydney. This is an update to my portfolio to show case my projects.
 
-Upate (Aug 2024): This was my portfolio back in 2022. I'm leaving this on public as a reminder of humble beginnings and where I started.
+*Update (Aug 2024): This was my portfolio back in 2022. I'm leaving this on public as a reminder of humble beginnings and where I started.*
 
 ## Installation
 
